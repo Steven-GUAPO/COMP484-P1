@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Spidey Scrapbook | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ARIA role example: main site header is a "banner" region -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home page">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <p class="brand-title">Spidey Scrapbook</p>
+          <p class="brand-sub">A Marvel-style fan site by Steven</p>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="origin.html">Origin</a>
+        <a href="villains.html">Villains</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <article class="panel">
+      <div class="caption">Issue #1 • Friendly Neighborhood Files</div>
+
+      <div class="hero">
+        <div>
+          <h1 class="panel-title">Spider-Man: My Favorite Hero</h1>
+
+          <p class="bubble">
+            “With great power comes great responsibility.”
+          </p>
+
+          <p>
+            Welcome to my comic-style website! This is my creative project where I
+            showcase HTML5 structure and CSS styling, all inspired by the world of Spider-Man! 
+          </p>
+
+          <span class="callout">Sling!</span>
+
+          <ul class="stats">
+            <li><b>Alias:</b> Spider-Man</li>
+            <li><b>Vibe:</b> Brave, witty, always learning</li>
+            <li><b>Favorite details:</b> Web-slinging combat movements and smart problem-solving</li>
+          </ul>
+        </div>
+
+        <!-- Attribute loading="lazy" improves performance by delaying image loads off-screen -->
+        <img class="hero-img" src="media/spiderman.jpg" alt="Spider-Man facing forward in a dynamic pose"
+             loading="lazy">
+      </div>
+    </article>
+
+    <section class="grid" aria-label="Home sections">
+      <section class="panel">
+        <h2 class="panel-title">What's inside this site?</h2>
+        <p>
+          Navigate the scrapbook using the menu bar at the top. Each page has a comic panel layout and clear headings to guide you through the content.
+        <br>The panels are designed to be bold and engaging, just like a comic book!
+        </p>
+
+        <!-- Element NOT in your list: <details> + <summary>
+             Used as a collapsible comic “bonus panel” for extra info without clutter -->
+        <details>
+          <summary>Bonus Panel: Spidey-Facts</summary>
+          <p>
+            Spider-Man is the first teen superhero not just a sidekick, and his comic stories often explore themes of responsibility, identity, and resilience.
+          </p>
+        </details>
+
+        <details>
+          <summary>Bonus Panel: Web-Slinging Tip</summary>
+          <p>
+            Movement is everything—positioning beats raw power. That's true in games,
+            sports, and even coding projects.
+          </p>
+        </details>
+
+        <details>
+          <summary>Bonus Panel: Spider-Verse!</summary>
+          <p>
+            Spider-Ham exists (yes, seriously). Check out the Spider-Verse comics and movies for more fun variations on the character!
+          </p>
+        </details>
+      </section>
+
+      <aside class="panel">
+        <h2 class="panel-title">Read More Spider-Man!</h2>
+        <p class="small">
+          If you want to dive into the comics, check out the official Marvel site for Spider-Man!!
+        </p>
+
+        <!-- Attributes NOT in your list:
+             target="_blank" opens new tab; rel="noopener" is a security best practice -->
+        <p>
+          <a class="callout" href="https://www.marvel.com/comics/characters/1009610/spider-man_peter_parker"
+             target="_blank" rel="noopener"
+             aria-label="Open Marvel Spider-Man comics in a new tab">
+            Read More!
+          </a>
+        </p>
+        </p>
+      </aside>
+    </section>
+
+    
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="small">© 2026 Steven</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
